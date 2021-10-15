@@ -1,9 +1,8 @@
-spring:  
+spring:
+  datasource:
+    password: develop
+    username: root
+    url: 'jdbc:mysql://${MYSQL_HOST:localhost}:3306/fornecedor'
   jpa:
     hibernate:
-      ddl-auto: create
-    show-sql: true
-  datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/fornecedor
-    username: root
-    password: develop
+      ddl-auto: update
